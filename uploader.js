@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('gae-uploader-comp', []);
+var app = angular.module('angular-gcs-uploader-comp', []);
 
 app.directive('uploadFile', ['SETTINGS', '__Uploader', '$rootScope', function(SETTINGS, __Uploader, $rootScope) {
     return {
