@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "main": "uploader.js",
   "dependencies": {
-    "angular": "^1.3.0",
+    "angular": "1.5.5",
     "angular-gcs-uploader": "*"
   },
   "homepage": "https://github.com/handerson2014/gae-uploader-comp",
