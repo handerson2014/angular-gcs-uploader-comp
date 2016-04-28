@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AngularJS</title>
+  <style>
+    [btf-dragon] {
+      padding: 20px;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body ng-app="ExampleApp">
+
+  <div class="container" ng-controller="MainCtrl">
+        <div upload-file bucket="qa" render="=s300" folder="user/pictures" actionUrl="None" emit="user-picture-modify">
+            <img src="../images/passport/icon-upload-picture.png" class="onboard-button-upload-pic" />
+            <input type="file" name="files[]" id="files" multiple="multiple" />
+        </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="uploader.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script>
+    angular.module('ExampleApp', ['gae-uploader-comp']);
+  </script>
+</body>
+</html>
